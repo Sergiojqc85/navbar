@@ -16,10 +16,10 @@ export default function Navbar() {
           <Link className="nav-link" to='/'>Inicio</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to='/Servicios'>Servicios</Link>
+          <Link className="nav-link" to='/servicios'>Servicios</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to='/Contacto'>Contacto</Link>
+          <Link className="nav-link" to='/contacto'>Contacto</Link>
         </li>
         
       </ul>

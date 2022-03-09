@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './components/navegacion/Navbar';
 import Inicio from './components/paginas/Inicio';
 import Servicios from './components/paginas/Servicios';
@@ -10,14 +10,22 @@ import Contacto from './components/paginas/Contacto';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
         <Navbar/>
-        <Routes>        
-          <Route exact path='/'> component={Inicio}</Route> 
-          <Route path='/Servicios'> component={Servicios}</Route>
-          <Route path='/Contacto'> component={Contacto}</Route>
+        <Routes>
+          <Route path='/'>
+            <Route index element={<Inicio/>}/>
+          </Route>    
+          <Route path='/servicios'>
+            <Route  index element={<Servicios/>}/>
+          </Route> 
+          <Route path='/contacto'>
+            <Route index element={<Contacto/>}/>
+          </Route>     
+          
+          
         </Routes>
-      </Router>
+      </BrowserRouter>
 
 
     </div>
