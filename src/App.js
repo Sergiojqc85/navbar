@@ -5,6 +5,8 @@ import Navbar from './components/navegacion/Navbar';
 import Inicio from './components/paginas/Inicio';
 import Servicios from './components/paginas/Servicios';
 import Contacto from './components/paginas/Contacto';
+import Carrito from './components/paginas/Carrito';
+import 'boxicons';
 
 
 function App() {
@@ -21,7 +23,10 @@ function App() {
           </Route> 
           <Route path='/contacto'>
             <Route index element={<Contacto/>}/>
-          </Route>     
+          </Route>    
+          <Route path='/carrito'>
+            <Route index element={<Carrito/>}/>
+          </Route> 
           
           
         </Routes>

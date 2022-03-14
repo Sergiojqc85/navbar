@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
+
 export default function Navbar() {
   return (
     <div>
@@ -20,6 +21,9 @@ export default function Navbar() {
         </li>
         <li className="nav-item">
           <Link className="nav-link" to='/contacto'>Contacto</Link>
+        </li>
+        <li className="nav-item cart">
+          <Link className="nav-link "  to='/carrito'><i class="bx bxs-cart"></i></Link>
         </li>
         
       </ul>
