@@ -6,7 +6,7 @@ import Inicio from './components/paginas/Inicio';
 import Servicios from './components/paginas/Servicios';
 import Contacto from './components/paginas/Contacto';
 import Carrito from './components/paginas/Carrito';
-import 'boxicons';
+
 
 
 function App() {

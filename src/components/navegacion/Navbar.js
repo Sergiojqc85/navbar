@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import 'boxicons';
+import Carrito from '../paginas/Carrito';
+import Cartwidget from '../Cartwidget';
+
 
 
 export default function Navbar() {
@@ -23,7 +27,7 @@ export default function Navbar() {
           <Link className="nav-link" to='/contacto'>Contacto</Link>
         </li>
         <li className="nav-item cart">
-          <Link className="nav-link "  to='/carrito'><i class="bx bxs-cart"></i></Link>
+          <Link className="nav-link "  to='/carrito'><Cartwidget/></Link>
         </li>
         
       </ul>
