@@ -36,7 +36,7 @@ function App() {
         
       </BrowserRouter>
       
-      <ItemCounter contando={contando} valorInitial={1}/>
+      <ItemCounter contando={contando} valorInitial={1} stock={5}/>
     </div>
     
     
