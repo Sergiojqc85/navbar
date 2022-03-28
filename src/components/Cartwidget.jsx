@@ -4,7 +4,7 @@ import React from 'react'
 
 const Cartwidget = () => {
   return (
-    <i class="bx bxs-cart"></i>
+    <i className="bx bxs-cart"></i>
   )
 }
 
