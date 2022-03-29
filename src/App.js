@@ -11,6 +11,8 @@ import Carrito from './components/paginas/Carrito';
 
 
 
+
+
 function App() {
   
   return (
@@ -31,11 +33,14 @@ function App() {
           </Route>    
           <Route path='/carrito'>
             <Route index element={<Carrito/>}/>
-          </Route>           
-        </Routes>
+          </Route>                 
+        </Routes>  
         
+             
       </BrowserRouter>
       
+      
+            
       
     </div>
     
