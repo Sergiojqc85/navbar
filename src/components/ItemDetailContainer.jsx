@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
   useEffect(()=>{
     setCarganding(true)
     getProductos
-    .them ((res)=> setProductDetail(res.find((item)=> item.id === '5')))
+    .then ((res)=> setProductDetail(res.find((item)=> item.id === '05')))
     .catch ((error)=> console.log (error))
     .finally(()=> setCarganding(false))
   }, [])

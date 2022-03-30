@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Item from './Item'
 import { getProductos } from '../../mocks/FakeApi'
-import ItemDetailContainer from './components/ItemDetailContainer';
+import ItemDetailContainer from '../ItemDetailContainer';
+
 
 export default function Productos() {
   const [listaProductos, setListaProductos]= useState([])
